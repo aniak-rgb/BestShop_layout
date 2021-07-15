@@ -1,0 +1,36 @@
+body {
+  font-family: $font-open-sans;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-family: $font-raleway;
+  font-size: 2.25rem;
+}
+
+.container {
+
+  max-width: 1900px;
+  width: 1350px;
+  margin: 0 auto;
+
+  @include notebook {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+
+.navigation__logo {
+  font-family: $font-raleway;
+  font-size: 2rem;
+  font-weight: 300;
+  color: $color-primary;
+}
