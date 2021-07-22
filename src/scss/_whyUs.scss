@@ -1,4 +1,86 @@
 .whyUs {
-  height: 200px;
-  background-color: yellow
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+
+}
+
+.whyUs__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.whyUs__title {
+  text-align: center;
+
+
+}
+
+.whyUs__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+
+}
+
+.whyUs__cicle {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.cicle__redish {
+  background-color: $color-redish;
+}
+
+
+.cicle__blueish {
+  background-color: $color-primary;
+}
+
+.cicle__greenish {
+  background-color: $color-green;
+}
+
+.whyUs__icon--person {
+  background-image: url("../assets/Person.svg");
+  width: 50px;
+  height: 60px;
+  @include icon()
+}
+
+.whyUs__icon--eye {
+  background-image: url("../assets/Eye.svg");
+  width: 65px;
+  height: 60px;
+  @include icon();
+
+}
+
+.whyUs__icon--catalog {
+  background-image: url("../assets/Catalog.svg");
+  width: 55px;
+  height: 60px;
+  @include icon()
+}
+
+.whyUs__number {
+  font-weight: bold;
+  letter-spacing: 0.1875rem;
+  margin-top: 13px;
+  font-size: 1.25rem;
+}
+
+.whyUs__txt {
+  color: $color-grey;
+  margin-top: 19px;
 }

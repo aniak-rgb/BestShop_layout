@@ -1,4 +1,72 @@
 .header {
-  height: 400px;
-  background-color: red;
+  // background-image: url("../assets/Background.png");
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-position-y: bottom;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+
+}
+
+
+.header__img {
+  width: 100%;
+  height: auto;
+}
+
+.header__title {
+  font-weight: normal;
+  font-size: 4.9em;
+  color: $color-black;
+  font-family: $font-raleway;
+  padding-top: 5%;
+  padding-bottom: 1%;
+
+  @include notebook {
+    font-size: 3em;
+    padding-top: 8%;
+  }
+
+  @include mobile {
+    font-size: 2.5em;
+    padding-top: 8%;
+  }
+
+
+}
+
+.header__text {
+  font-size: 1.6em;
+  font-family: $font-open-sans;
+  text-align: center;
+  margin-bottom: 5%;
+
+  @include notebook {
+    font-size: 1.2em;
+    margin-bottom: 8%;
+  }
+
+  @include mobile {
+    font-size: 1em;
+    margin-bottom: 8%;
+  }
+}
+
+.header__btn {
+  @include btn();
+  background-color: $color-primary;
+
+  @include notebook {
+    font-size: 1.2em;
+
+  }
+
+  @include mobile {
+    font-size: 1em;
+
+  }
+
 }
