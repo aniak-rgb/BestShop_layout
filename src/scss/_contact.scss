@@ -1,4 +1,177 @@
 .contact {
-  height: 300px;
-  background-color: blue
+  margin-top: 200px;
+  margin-bottom: 100px;
+
+}
+
+.contact__area {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include notebook {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
+
+}
+
+.contact__txt {
+  width: 40%;
+
+  @include notebook {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @include mobile {
+    width: 80%;
+  }
+
+}
+
+.contact__formArea {
+  width: 40%;
+
+  @include notebook {
+    width: 50%;
+    margin-top: 150px;
+  }
+
+  @include mobile {
+    width: 80%;
+  }
+
+}
+
+.contact__media {
+  display: flex;
+  padding-top: 70px;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+
+  }
+}
+
+.contact__mail {
+  display: flex;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.contact__phone {
+  display: flex;
+  margin-left: 20px;
+
+  @include mobile {
+    margin-left: 0;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.contact__text {
+  font-size: 1.2em;
+  color: $color-grey;
+}
+
+.contact__subtitle {
+  padding-top: 20px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact__label {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: $color-primary;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 2em;
+  padding-bottom: 20px;
+}
+
+
+.contact__input {
+  border: none;
+  border-bottom: 1px solid $color-grey;
+  outline: none;
+
+}
+
+.contact__label--email {
+  margin-top: 50px;
+}
+
+.contact__agree {
+  color: #707070;
+  margin-left: 30px;
+
+  @include mobile {
+    font-size: 0.8em
+  }
+
+}
+
+
+.contact__btn {
+  @include btn();
+  background-color: $color-primary;
+  width: 200px;
+  align-self: flex-end;
+  padding: 15px 50px;
+  margin-top: 40px;
+
+  @include mobile {
+    font-size: 1em;
+  }
+}
+
+.contact__agreeArea {
+  display: flex;
+  margin-top: 30px;
+  position: relative;
+}
+
+.contact__checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.contact__checkboxSpan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border: 1px solid #95989A;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.contact__checkbox:checked~.contact__checkboxSpan {
+  background-image: url(../assets/Checkmark.svg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
 }

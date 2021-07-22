@@ -1,4 +1,169 @@
 .prices {
-  height: 100vh;
-  background-color: red;
+  width: 100%;
+
+  @include mobile {
+    margin-top: 200px;
+  }
+
+}
+
+.prices__title {
+  text-align: center;
+  margin-bottom: 100px;
+
+  @include mobile {
+    margin-bottom: 50px;
+  }
+
+}
+
+.prices__cards {
+  display: flex;
+  justify-content: space-around;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.prices__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 18px;
+  width: 25%;
+  position: relative;
+
+  @include tablet {
+    width: 40%;
+    margin-bottom: 60px;
+  }
+
+  @include mobile {
+    width: 80%;
+
+  }
+}
+
+.prices__card--redish {
+  border: 1px solid $color-redish;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 5px 1px 27px $color-redish;
+
+  }
+}
+
+.prices__card--primary {
+  border: 1px solid $color-primary;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 5px 1px 27px $color-primary;
+  }
+}
+
+.prices__card--greenish {
+  border: 1px solid $color-green;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 5px 1px 27px $color-green;
+  }
+}
+
+
+.prices__subtitle {
+  font-size: 2em;
+  font-family: $font-raleway;
+  font-weight: bold;
+  color: #13253B;
+  padding-top: 8%;
+  padding-bottom: 10%;
+
+  @include mobile {
+    font-size: 1.5em;
+  }
+
+}
+
+.prices__price {
+  font-size: 4.6em;
+  font-weight: 300;
+
+  @include mobile {
+    font-size: 3em;
+  }
+}
+
+.prices__price--redish {
+  color: $color-redish
+}
+
+.prices__price--primary {
+  color: $color-primary
+}
+
+.prices__price--greenish {
+  color: $color-green
+}
+
+.prices__btn {
+  @include btn();
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 15px 50px;
+  cursor: pointer;
+
+  @include mobile {
+    font-size: 1em;
+  }
+}
+
+.prices__btn--redish {
+  background-color: $color-redish;
+}
+
+.prices__btn--primary {
+  background-color: $color-primary;
+}
+
+.prices__btn--greenish {
+  background-color: $color-green;
+}
+
+.prices__items {
+  padding-bottom: 20%;
+  padding-top: 10%;
+
+}
+
+.prices__item {
+  padding-bottom: 8%;
+  padding-top: 8%;
+
+  @include mobile {
+    font-size: 0.8em;
+  }
+}
+
+.prices__item--yes {
+  &::before {
+    @include pricesBox();
+    background-image: url('../assets/Checkmark-2.svg');
+
+  }
+}
+
+
+.prices__item--not {
+  &::before {
+    @include pricesBox();
+    background-image: url("../assets/Close.svg");
+
+  }
 }

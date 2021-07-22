@@ -33,7 +33,7 @@ export const Navigation = () => {
       <nav className="hamburger__nav">
         <input type="checkbox" className="hamburger__checkbox" id="hamburger__checkbox" />
         <label for="hamburger__checkbox" className="hamburger__label">
-          <span></span>
+          <span ></span>
           <span></span>
           <span></span>
         </label>

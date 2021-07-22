@@ -1,0 +1,29 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5% 3%;
+  box-shadow: 0 -5px 40px #00000029;
+  align-items: center;
+
+  @include mobile {
+    padding: 5% 5%;
+  }
+}
+
+.footer__rights {
+  font-size: 0.6875rem;
+  line-height: 1.5rem;
+  color: $color-grey;
+}
+
+.footer__facebook {
+  margin-right: 10px;
+}
+
+.footer__logo {
+  @include mobile {
+    font-size: 1.5em;
+  }
+
+}
