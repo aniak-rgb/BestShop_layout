@@ -1,8 +1,4 @@
 .header {
-  // background-image: url("../assets/Background.png");
-  // background-repeat: no-repeat;
-  // background-size: contain;
-  // background-position-y: bottom;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -25,33 +21,35 @@
   padding-top: 5%;
   padding-bottom: 1%;
 
-  @include notebook {
-    font-size: 3em;
+  @include tablet {
+    font-size: 4rem;
     padding-top: 8%;
   }
 
+
   @include mobile {
-    font-size: 2.5em;
-    padding-top: 8%;
+    font-size: 3rem;
+    padding-top: 15%;
   }
 
 
 }
 
 .header__text {
-  font-size: 1.6em;
+  font-size: $font-sizeText;
   font-family: $font-open-sans;
   text-align: center;
   margin-bottom: 5%;
 
-  @include notebook {
-    font-size: 1.2em;
+  @include tablet {
+    font-size: $font-sizeTextTablet;
     margin-bottom: 8%;
   }
 
   @include mobile {
-    font-size: 1em;
-    margin-bottom: 8%;
+    font-size: $font-sizeTextMobile;
+    margin-bottom: 25%;
+    padding: 0 30px;
   }
 }
 
@@ -59,14 +57,9 @@
   @include btn();
   background-color: $color-primary;
 
-  @include notebook {
-    font-size: 1.2em;
-
-  }
-
   @include mobile {
-    font-size: 1em;
-    margin-top: 100px;
+    font-size: $font-sizeBtnMobile;
+
 
   }
 

@@ -1,10 +1,6 @@
 .prices {
   width: 100%;
-
-  @include mobile {
-    margin-top: 200px;
-  }
-
+  margin-top: $margin-topDesktop;
 }
 
 .prices__title {
@@ -41,7 +37,7 @@
   }
 
   @include mobile {
-    width: 80%;
+    width: 60%;
 
   }
 }
@@ -76,7 +72,7 @@
 
 
 .prices__subtitle {
-  font-size: 2em;
+  font-size: 2.3rem;
   font-family: $font-raleway;
   font-weight: bold;
   color: #13253B;
@@ -84,7 +80,7 @@
   padding-bottom: 10%;
 
   @include mobile {
-    font-size: 1.5em;
+    font-size: 2rem;
   }
 
 }
@@ -96,6 +92,10 @@
   @include mobile {
     font-size: 3em;
   }
+}
+
+.prices__limitedOffert {
+  font-size: $font-sizeSubtitle;
 }
 
 .prices__price--redish {
@@ -120,7 +120,7 @@
   cursor: pointer;
 
   @include mobile {
-    font-size: 1em;
+    font-size: $font-sizeBtnMobile;
   }
 }
 
@@ -145,9 +145,12 @@
 .prices__item {
   padding-bottom: 8%;
   padding-top: 8%;
+  font-size: $font-sizeSubtitle;
+
+
 
   @include mobile {
-    font-size: 0.8em;
+    font-size: $font-sizeSubtitleMobile;
   }
 }
 

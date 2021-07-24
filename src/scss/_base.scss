@@ -1,3 +1,9 @@
+:root {
+  font-size: 10px;
+
+}
+
+
 body {
   font-family: $font-open-sans;
 }
@@ -12,11 +18,15 @@ ul {
 
 h2 {
   font-family: $font-raleway;
-  font-size: 2.25rem;
+  font-size: $font-sizeTitle;
   font-weight: normal;
 
+  @include tablet {
+    font-size: $font-sizeTitleTablet;
+  }
+
   @include mobile {
-    font-size: 1.8rem;
+    font-size: $font-sizeTitleMobile;
   }
 }
 
@@ -35,7 +45,7 @@ h2 {
 
 .navigation__logo {
   font-family: $font-raleway;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 300;
   color: $color-primary;
 }

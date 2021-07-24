@@ -1,14 +1,15 @@
 .benefits {
-  margin-top: 100px;
+  margin-top: $margin-topDesktop;
   display: flex;
   flex-direction: column;
   padding: 100px 100px;
   background-color: $color-light-grey;
-  margin-bottom: 100px;
+
 
   @include mobile {
     padding-left: 0;
     padding-right: 0;
+
   }
 }
 
@@ -71,14 +72,16 @@
 .benefits__text {
   line-height: 160%;
   letter-spacing: 1px;
+  font-size: $font-sizeText;
 
-  // padding: 50px 0 30px;
   @include tablet {
     padding: 5% 0 5% 0;
+    font-size: $font-sizeTextTablet;
   }
 
   @include mobile {
     padding: 15% 0 15% 0;
+    font-size: $font-sizeTextMobile;
   }
 
 
@@ -106,7 +109,7 @@
   z-index: 99;
 
   @include mobile {
-    width: 280px;
+    width: 250px;
   }
 
 
@@ -140,8 +143,8 @@
   }
 
   @include mobile {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
 
   }
 
@@ -153,7 +156,7 @@
   z-index: 99;
 
   @include mobile {
-    width: 330px;
+    width: 300px;
   }
 
 }
@@ -176,8 +179,8 @@
   }
 
   @include mobile {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
   }
 
 }
