@@ -13,7 +13,7 @@ export const Navigation = () => {
       <nav className="navigation__nav">
         <ul className="navigation__items">
           <li className="navigation__item">
-            <Scroll.Link to='whyUs' spy={true} smooth={true} className="navigation__link">Why Us</Scroll.Link>
+            <Scroll.Link to='whyUs' offset={-150} spy={true} smooth={true} className="navigation__link">Why Us</Scroll.Link>
           </li>
 
           <li className="navigation__item">
@@ -21,7 +21,7 @@ export const Navigation = () => {
           </li>
 
           <li className="navigation__item">
-            <Scroll.Link to='prices' spy={true} smooth={true} className="navigation__link">Prices</Scroll.Link>
+            <Scroll.Link to='prices' offset={-180} spy={true} smooth={true} className="navigation__link">Prices</Scroll.Link>
           </li>
 
           <li className="navigation__item">

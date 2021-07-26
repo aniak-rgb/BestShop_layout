@@ -110,10 +110,12 @@ export const Contact = () => {
             <div className="errorMsgMail">{errorMail && <p>{errorMail}</p>}</div>
 
             <div className="contact__agreeArea">
-              <input type="checkbox" className="contact__checkbox" id="agree" name="checkbox" value={checked} onChange={handleCheckbox} />
-              <span className="contact__checkboxSpan"></span>
+
               <label htmlFor="" className="contact__agree" for="agree">
-                i hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the european parliament’s and council of the european union regulation on the protection of natural persons as of 27 april 2016, with regard to the processing of personal data and on the free movement of such data, and repealing directive 95/46/ec (data protection directive)</label>
+                i hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the european parliament’s and council of the european union regulation on the protection of natural persons as of 27 april 2016, with regard to the processing of personal data and on the free movement of such data, and repealing directive 95/46/ec (data protection directive)
+                <input type="checkbox" className="contact__checkbox" id="agree" name="checkbox" value={checked} onChange={handleCheckbox} />
+                <span className="contact__checkboxSpan"></span>
+              </label>
 
             </div>
             <div className="errorMsgChecked">{errorChecked && <p>{errorChecked}</p>}</div>
